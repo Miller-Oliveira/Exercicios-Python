@@ -1,0 +1,33 @@
+#Projeto 01 – Detetive
+
+
+pergunta_1 = input("Você telefonou para a vítima? ").strip().upper()[0]
+pergunta_2 = input("Você esteve no local do crime? ").strip().upper()[0]
+pergunta_3 = input("Você mora perto da vítima? ").strip().upper()[0]
+pergunta_4 = input("Você devia para a vítima? ").strip().upper()[0]
+pergunta_5 = input("Você já trabalhou com a vítima? ").strip().upper()[0]
+resposta_s = 0
+if pergunta_1 == 'S':  
+   resposta_s += 1
+if pergunta_2 == 'S':  
+  resposta_s += 1  
+if pergunta_3 == 'S':  
+  resposta_s += 1 
+if pergunta_4 == 'S':  
+  resposta_s += 1
+elif pergunta_5 == 'S':  
+  resposta_s += 1
+if resposta_s == 2:
+   print('Você é suspeito desse crime, acho bom você não tentar sair da cidade ou fazer qualquer outra gracinha. ')
+elif resposta_s >4:
+  print('Você está preso por assassinato!!! ')
+elif 3<= resposta_s <=4:
+  print('Não adianta negar, já temos a confirmação de que você foi cumplice do crime.  ')
+else:
+  print("No final das conas você era realmente inocente, já está liberado!!! ")
+
+ 
+  
+# Se a pessoa responder positivamente 2 questões ela deve ser classificada como "Suspeita", 
+# Entre 3 e 4 como "Cúmplice" • 5 como "Assassino". 
+# Caso contrário, ele será classificado como "Inocente".
